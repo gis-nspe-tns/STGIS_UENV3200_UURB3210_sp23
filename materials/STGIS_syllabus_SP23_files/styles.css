@@ -37,6 +37,17 @@ a.external:after {
     background-size: .75rem .75rem;
 }
 
+.sidebar nav[role=doc-toc] ul>li>ul>li>a.active {
+    border-left: 1px solid #45A29E;
+    color: #45A29E !important;
+    }
+
 .sidebar nav[role=doc-toc] ul>li>a.active {
     border-left: 1px solid #45A29E;
     color: #45A29E !important;
+  }
+
+
+
+
+

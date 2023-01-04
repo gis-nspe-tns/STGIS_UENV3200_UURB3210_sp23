@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2023-01-04">
 
 <title>Spatial Thinking with GIS: Syllabus</title>
 <style>
@@ -47,9 +48,34 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#lecture" id="toc-lecture" class="nav-link active" data-scroll-target="#lecture">Lecture</a></li>
+  <li><a href="#faculty-instructor" id="toc-faculty-instructor" class="nav-link active" data-scroll-target="#faculty-instructor">Faculty Instructor</a></li>
+  <li><a href="#lecture" id="toc-lecture" class="nav-link" data-scroll-target="#lecture">Lecture</a></li>
   <li><a href="#lab" id="toc-lab" class="nav-link" data-scroll-target="#lab">Lab</a></li>
-  <li><a href="#next-section" id="toc-next-section" class="nav-link" data-scroll-target="#next-section">Next Section</a></li>
+  <li><a href="#course-description" id="toc-course-description" class="nav-link" data-scroll-target="#course-description">Course Description</a></li>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#required-equipment" id="toc-required-equipment" class="nav-link" data-scroll-target="#required-equipment">Required Equipment</a></li>
+  <li><a href="#required-course-textbook" id="toc-required-course-textbook" class="nav-link" data-scroll-target="#required-course-textbook">Required Course Textbook</a></li>
+  <li><a href="#course-outline" id="toc-course-outline" class="nav-link" data-scroll-target="#course-outline">Course Outline</a>
+  <ul class="collapse">
+  <li><a href="#class-1-arcgis-orientation" id="toc-class-1-arcgis-orientation" class="nav-link" data-scroll-target="#class-1-arcgis-orientation">Class 1 | ArcGIS Orientation</a></li>
+  <li><a href="#class-2-vector-model---latitude-longitude" id="toc-class-2-vector-model---latitude-longitude" class="nav-link" data-scroll-target="#class-2-vector-model---latitude-longitude">Class 2 | Vector Model - Latitude &amp; Longitude</a></li>
+  <li><a href="#class-3-cartographic-principles-intro-to-symbolization" id="toc-class-3-cartographic-principles-intro-to-symbolization" class="nav-link" data-scroll-target="#class-3-cartographic-principles-intro-to-symbolization">Class 3 | Cartographic Principles &amp; Intro to Symbolization</a></li>
+  <li><a href="#class-4-thematic-mapping" id="toc-class-4-thematic-mapping" class="nav-link" data-scroll-target="#class-4-thematic-mapping">Class 4 | Thematic Mapping</a></li>
+  <li><a href="#class-5-introduction-to-the-raster-data-model" id="toc-class-5-introduction-to-the-raster-data-model" class="nav-link" data-scroll-target="#class-5-introduction-to-the-raster-data-model">Class 5 | Introduction to the Raster Data Model</a></li>
+  <li><a href="#class-6-map-projections-intro-to-openstreetmap-osm-data" id="toc-class-6-map-projections-intro-to-openstreetmap-osm-data" class="nav-link" data-scroll-target="#class-6-map-projections-intro-to-openstreetmap-osm-data">Class 6 | Map Projections + Intro to OpenStreetMap (OSM) data</a></li>
+  <li><a href="#class-7-spatial-analysis---geoprocessing-i" id="toc-class-7-spatial-analysis---geoprocessing-i" class="nav-link" data-scroll-target="#class-7-spatial-analysis---geoprocessing-i">Class 7 | Spatial Analysis - Geoprocessing I</a></li>
+  <li><a href="#class-8-spatial-analysis---geoprocessing-ii" id="toc-class-8-spatial-analysis---geoprocessing-ii" class="nav-link" data-scroll-target="#class-8-spatial-analysis---geoprocessing-ii">Class 8 | Spatial Analysis - Geoprocessing II</a></li>
+  <li><a href="#class-9-spatial-analysis---geoprocessing-iii" id="toc-class-9-spatial-analysis---geoprocessing-iii" class="nav-link" data-scroll-target="#class-9-spatial-analysis---geoprocessing-iii">Class 9 | Spatial Analysis - Geoprocessing III</a></li>
+  <li><a href="#class-10-remote-sensing-for-urban-analysis" id="toc-class-10-remote-sensing-for-urban-analysis" class="nav-link" data-scroll-target="#class-10-remote-sensing-for-urban-analysis">Class 10 | Remote Sensing for Urban Analysis</a></li>
+  <li><a href="#class-11-introduction-to-web-mapping-arcgis-online" id="toc-class-11-introduction-to-web-mapping-arcgis-online" class="nav-link" data-scroll-target="#class-11-introduction-to-web-mapping-arcgis-online">Class 11 | Introduction to Web Mapping | ArcGIS Online</a></li>
+  </ul></li>
+  <li><a href="#required-recommended-reading---weekly-quizzes" id="toc-required-recommended-reading---weekly-quizzes" class="nav-link" data-scroll-target="#required-recommended-reading---weekly-quizzes">Required &amp; Recommended Reading - Weekly Quizzes</a>
+  <ul class="collapse">
+  <li><a href="#materials" id="toc-materials" class="nav-link" data-scroll-target="#materials">Materials</a></li>
+  <li><a href="#course-policies" id="toc-course-policies" class="nav-link" data-scroll-target="#course-policies">Course Policies</a></li>
+  </ul></li>
+  <li><a href="#evaluation-and-grading" id="toc-evaluation-and-grading" class="nav-link" data-scroll-target="#evaluation-and-grading">Evaluation and Grading</a></li>
+  <li><a href="#grading-categories" id="toc-grading-categories" class="nav-link" data-scroll-target="#grading-categories">Grading Categories</a></li>
   </ul>
 </nav>
 </div>
@@ -68,6 +94,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 4, 2023</p>
+    </div>
+  </div>
   
     
   </div>
@@ -75,12 +107,20 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<p><img src="https://i.imgur.com/UbPmEXF.png" class="img-fluid" alt="Imgur"> <em>Source: https://atlas.developmentseed.org/all/ | Connectivity Atlas</em></p>
+<section id="faculty-instructor" class="level2">
+<h2 class="anchored" data-anchor-id="faculty-instructor">Faculty Instructor</h2>
+<ul>
+<li>Stephen Metts | The School for Public Engagement: Environmental Studies and Urban Studies</li>
+<li><a href="mailto:metts.gis.nspe@gmail.com">Email</a></li>
+</ul>
+</section>
 <section id="lecture" class="level2">
 <h2 class="anchored" data-anchor-id="lecture">Lecture</h2>
 <ul>
 <li>Monday (01/23/2022 - 05/15/2022)</li>
 <li>12:00pm - 1:40pm</li>
-<li>6 East 16th Street - Room 701</li>
+<li>Academic Entrance 63 Fifth Ave | Room L107</li>
 </ul>
 </section>
 <section id="lab" class="level2">
@@ -88,21 +128,387 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Wednesday (01/25/2022 - 05/17/2022)</li>
 <li>12:00pm - 1:40pm</li>
-<li>6 East 16th Street - Room 701</li>
+<li>Academic Entrance 63 Fifth Ave | Room L107</li>
 </ul>
 </section>
-<section id="next-section" class="level2">
-<h2 class="anchored" data-anchor-id="next-section">Next Section</h2>
+<section id="course-description" class="level2">
+<h2 class="anchored" data-anchor-id="course-description">Course Description</h2>
+<p>With the rapid growth of computing technologies, geographic information systems (GIS) have become an important tool for examining many crucial urban issues, including human health, social equity, urbanization, and climate change. GIS are used extensively by nonprofit, business and government sectors to examine the spatial aspects of these issues and inform research, planning and decision making practices. This course offers a conceptual, technical and practical introduction to the field of spatial analysis and GIS.</p>
+<p>Through weekly lectures, guided lab sessions, independent research, and a culminating final project, students will gain a working knowledge Geographic information Systems (GIS) and cartographic strategies for a myriad of urban design issues. In this course, students will experience project design and management, gain literacy in spatial data models and methods of spatial analysis, engage with theoretical underpinnings of spatial reasoning, and critically examine methods of spatial analysis and cartographic representation. Important principles and concepts of spatial analysis, spatial reasoning and GIS are explored throughout the course. By the end of the course, students are expected to have a thorough understanding of spatial reasoning, proficiency using GIS software, and familiarity with its applications to environmental and urban studies.</p>
+</section>
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
 <ul>
-<li><p><code>code</code></p></li>
-<li><p><a href="https://www.google.com/">link</a></p></li>
+<li>Familiarity with important concepts and principles of spatial analysis.</li>
+<li>Literacy in spatial data models and formats.</li>
+<li>Familiarity with methods of spatial analysis.</li>
+<li>Familiarity with applications of geospatial analysis for environmental and urban issues.</li>
+<li>Basic working techniques in GIS.</li>
+<li>Demonstrated ability to apply spatial concepts to an final student project.</li>
+<li>Ability to manage project workflow.</li>
+<li>Ability to take a critical stance toward cartography, spatial reasoning and spatial analysis.</li>
 </ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="https://i.imgur.com/N00P6vd.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>source:</em></figcaption><p></p>
-</figure>
+</section>
+<section id="required-equipment" class="level2">
+<h2 class="anchored" data-anchor-id="required-equipment">Required Equipment</h2>
+<ul>
+<li>Access to The New School <em>PC Labs</em> across the campus - including the course classroom - where <a href="https://www.esri.com/en-us/arcgis/products/arcgis-desktop/overview">ArcGIS Desktop</a> is installed on Windows machines under the <em>Statistics and Research</em> folder at the <em>Start Menu</em>.</li>
+<li>Portable external USB drive with at least 32gb storage space to save and transport coursework and student final project.</li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
 </div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Students can obtain a <a href="https://www.esri.com/en-us/arcgis/products/arcgis-for-student-use/buy">1-year ESRI Student License</a> for both ArcGIS Desktop and ArcGIS Pro for an individual machine. The cost is $100.00 per year. Consult with instructor if interested in this software option.</p>
+</div>
+</div>
+</section>
+<section id="required-course-textbook" class="level2">
+<h2 class="anchored" data-anchor-id="required-course-textbook">Required Course Textbook</h2>
+<ul>
+<li>Michael Shin, Jonathan Campbell, and Sierra Burkhart. (2022). Essentials of Geographic Information Systems, V 3.0. ISBN: 978-1-4533-3762-2. FlatWorld Press.</li>
+</ul>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Students can easily access this text in multiple formats; more information and direct link to the textbook is located in the <a href="https://gis-nspe-tns.github.io/STGIS_UENV3200_UURB3210_sp23/materials/STGIS_course-introduction_SP23.html">Class Introduction document</a>.</p>
+</div>
+</div>
+</section>
+<section id="course-outline" class="level2">
+<h2 class="anchored" data-anchor-id="course-outline">Course Outline</h2>
+<section id="class-1-arcgis-orientation" class="level3">
+<h3 class="anchored" data-anchor-id="class-1-arcgis-orientation">Class 1 | ArcGIS Orientation</h3>
+<section id="lecture-1" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-1">Lecture:</h4>
+<ul>
+<li>An introduction to Cartography, Geographic Information Systems (GIS) &amp; Spatial Thinking</li>
+</ul>
+</section>
+<section id="lab-1" class="level4">
+<h4 class="anchored" data-anchor-id="lab-1">Lab:</h4>
+<ul>
+<li>Introduction to ArcGIS Desktop Interface</li>
+</ul>
+</section>
+<section id="assignment" class="level4">
+<h4 class="anchored" data-anchor-id="assignment">Assignment:</h4>
+<ul>
+<li>Create an introductory map with ArcGIS Desktop</li>
+</ul>
+</section>
+</section>
+<section id="class-2-vector-model---latitude-longitude" class="level3">
+<h3 class="anchored" data-anchor-id="class-2-vector-model---latitude-longitude">Class 2 | Vector Model - Latitude &amp; Longitude</h3>
+<section id="lecture-2" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-2">Lecture:</h4>
+<ul>
+<li>Introduction to Vector Model, Latitude &amp; Longitude</li>
+<li>Geographic Coordinate System (GCS)</li>
+<li>Spatial vs.&nbsp;Nonspatial data</li>
+</ul>
+</section>
+<section id="lab-2" class="level4">
+<h4 class="anchored" data-anchor-id="lab-2">Lab:</h4>
+<ul>
+<li>Developing &amp; mapping Lat/Lon points - Geographic Coordinate System (GCS)</li>
+<li>Working with <code>.csv</code>, <code>.shp</code>, <code>geojson</code><a href="http://geojson.io/#map=2/20.0/0.0">geojson.io</a> and <code>geodatabases</code></li>
+</ul>
+</section>
+<section id="assignment-1" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-1">Assignment:</h4>
+<ul>
+<li>Acquiring, cleaning and mapping data as Lat/Lon points features. Utilize <a href="https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9">NYC 311 Dataset</a></li>
+</ul>
+</section>
+</section>
+<section id="class-3-cartographic-principles-intro-to-symbolization" class="level3">
+<h3 class="anchored" data-anchor-id="class-3-cartographic-principles-intro-to-symbolization">Class 3 | Cartographic Principles &amp; Intro to Symbolization</h3>
+<section id="lecture-3" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-3">Lecture:</h4>
+<ul>
+<li>Cartographic design &amp; conventions</li>
+</ul>
+</section>
+<section id="lab-3" class="level4">
+<h4 class="anchored" data-anchor-id="lab-3">Lab:</h4>
+<ul>
+<li>Symbolization techniques with ArcGIS</li>
+</ul>
+</section>
+<section id="assignment-2" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-2">Assignment:</h4>
+<ul>
+<li>Points features &amp; symbolization strategies</li>
+</ul>
+</section>
+</section>
+<section id="class-4-thematic-mapping" class="level3">
+<h3 class="anchored" data-anchor-id="class-4-thematic-mapping">Class 4 | Thematic Mapping</h3>
+<section id="lecture-4" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-4">Lecture:</h4>
+<ul>
+<li>Thematic Mapping</li>
+<li>Data types &amp; sources</li>
+<li>Demographic Data &amp; Maps</li>
+<li>Choropleth mapping</li>
+</ul>
+</section>
+<section id="lab-4" class="level4">
+<h4 class="anchored" data-anchor-id="lab-4">Lab:</h4>
+<ul>
+<li>Displaying Data via Classification Schemes</li>
+<li>Histograms</li>
+<li>Spatial &amp; Table Joins</li>
+<li>Cartographic thematic design</li>
+<li>Choropleth Mapping</li>
+</ul>
+</section>
+<section id="assignment-3" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-3">Assignment:</h4>
+<ul>
+<li>Thematic maps for US Census Datasets</li>
+</ul>
+</section>
+</section>
+<section id="class-5-introduction-to-the-raster-data-model" class="level3">
+<h3 class="anchored" data-anchor-id="class-5-introduction-to-the-raster-data-model">Class 5 | Introduction to the Raster Data Model</h3>
+<section id="lecture-5" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-5">Lecture:</h4>
+<ul>
+<li>Introduction to Raster Data</li>
+</ul>
+</section>
+<section id="lab-5" class="level4">
+<h4 class="anchored" data-anchor-id="lab-5">Lab:</h4>
+<ul>
+<li>Raster data types, manipulation and output</li>
+</ul>
+</section>
+<section id="assignment-4" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-4">Assignment:</h4>
+<ul>
+<li>Mapping with Raster data</li>
+</ul>
+</section>
+</section>
+<section id="class-6-map-projections-intro-to-openstreetmap-osm-data" class="level3">
+<h3 class="anchored" data-anchor-id="class-6-map-projections-intro-to-openstreetmap-osm-data">Class 6 | Map Projections + Intro to OpenStreetMap (OSM) data</h3>
+<section id="lecture-6" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-6">Lecture:</h4>
+<ul>
+<li>Map projections</li>
+<li>Coordinate systems</li>
+<li>Geodetic datums</li>
+</ul>
+</section>
+<section id="lab-6" class="level4">
+<h4 class="anchored" data-anchor-id="lab-6">Lab:</h4>
+<ul>
+<li>Managing &amp; transforming projections &amp; coordinate systems in ArcGIS</li>
+</ul>
+</section>
+<section id="assignment-5" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-5">Assignment:</h4>
+<ul>
+<li>Mapping in the UTM system; advantages of planar units in GIS</li>
+<li>Solving common map projection problems</li>
+</ul>
+</section>
+</section>
+<section id="class-7-spatial-analysis---geoprocessing-i" class="level3">
+<h3 class="anchored" data-anchor-id="class-7-spatial-analysis---geoprocessing-i">Class 7 | Spatial Analysis - Geoprocessing I</h3>
+<section id="lecture-7" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-7">Lecture:</h4>
+<ul>
+<li>Introduction to Spatial Analysis I</li>
+</ul>
+</section>
+<section id="lab-7" class="level4">
+<h4 class="anchored" data-anchor-id="lab-7">Lab:</h4>
+<ul>
+<li>Selection Types - Selections by Attributes vs Selections by Location</li>
+<li>Introduction to <code>SQL</code></li>
+</ul>
+</section>
+<section id="assignment-6" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-6">Assignment:</h4>
+<ul>
+<li>Spatial Analysis Map I</li>
+</ul>
+</section>
+</section>
+<section id="class-8-spatial-analysis---geoprocessing-ii" class="level3">
+<h3 class="anchored" data-anchor-id="class-8-spatial-analysis---geoprocessing-ii">Class 8 | Spatial Analysis - Geoprocessing II</h3>
+<section id="lecture-8" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-8">Lecture:</h4>
+<ul>
+<li>Introduction to Spatial Analysis II</li>
+</ul>
+</section>
+<section id="lab-8" class="level4">
+<h4 class="anchored" data-anchor-id="lab-8">Lab:</h4>
+<ul>
+<li>Feature proximity, overlay &amp; extraction operations</li>
+<li>Classifying spatial data via spatial operations</li>
+</ul>
+</section>
+<section id="assignment-7" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-7">Assignment:</h4>
+<ul>
+<li>Spatial Analysis Map II</li>
+</ul>
+</section>
+</section>
+<section id="class-9-spatial-analysis---geoprocessing-iii" class="level3">
+<h3 class="anchored" data-anchor-id="class-9-spatial-analysis---geoprocessing-iii">Class 9 | Spatial Analysis - Geoprocessing III</h3>
+<section id="lecture-9" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-9">Lecture:</h4>
+<ul>
+<li>Introduction to Spatial Analysis III</li>
+</ul>
+</section>
+<section id="lab-9" class="level4">
+<h4 class="anchored" data-anchor-id="lab-9">Lab:</h4>
+<ul>
+<li>Spatial Interpolation</li>
+<li>Geographic Apportionment</li>
+<li>Summarize and aggregate data.</li>
+<li>Calculate Statistics</li>
+</ul>
+</section>
+<section id="assignment-8" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-8">Assignment:</h4>
+<ul>
+<li>Spatial Analysis Map III</li>
+</ul>
+</section>
+</section>
+<section id="class-10-remote-sensing-for-urban-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="class-10-remote-sensing-for-urban-analysis">Class 10 | Remote Sensing for Urban Analysis</h3>
+<section id="lecture-10" class="level5">
+<h5 class="anchored" data-anchor-id="lecture-10">Lecture:</h5>
+<ul>
+<li>Remote Sensing (RS) Technology for Urban Analysis</li>
+</ul>
+</section>
+<section id="lab-10" class="level4">
+<h4 class="anchored" data-anchor-id="lab-10">Lab:</h4>
+<ul>
+<li>Displaying &amp; manipulating multi-band rasters</li>
+<li>Working with single-band, classified rasters</li>
+<li>Land cover data</li>
+<li>Categorical raster data manipulation</li>
+<li>Introduction to the Landsat Analysis-Ready Dataset</li>
+</ul>
+</section>
+<section id="assignment-9" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-9">Assignment:</h4>
+<ul>
+<li>RS Indices for Urban Analysis</li>
+</ul>
+</section>
+</section>
+<section id="class-11-introduction-to-web-mapping-arcgis-online" class="level3">
+<h3 class="anchored" data-anchor-id="class-11-introduction-to-web-mapping-arcgis-online">Class 11 | Introduction to Web Mapping | <a href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview">ArcGIS Online</a></h3>
+<section id="lecture-11" class="level4">
+<h4 class="anchored" data-anchor-id="lecture-11">Lecture:</h4>
+<ul>
+<li>Web Mapping + ArcGIS Online Introduction</li>
+</ul>
+</section>
+<section id="lab-11" class="level4">
+<h4 class="anchored" data-anchor-id="lab-11">Lab:</h4>
+<ul>
+<li>ArcGIS Online Interface</li>
+<li>Distances and Isochrones for Urban Analysis</li>
+<li>Interactive map creation</li>
+</ul>
+</section>
+<section id="assignment-10" class="level4">
+<h4 class="anchored" data-anchor-id="assignment-10">Assignment:</h4>
+<ul>
+<li>Create an online web map with ArcGIS Online</li>
+</ul>
+</section>
+</section>
+</section>
+<section id="required-recommended-reading---weekly-quizzes" class="level2">
+<h2 class="anchored" data-anchor-id="required-recommended-reading---weekly-quizzes">Required &amp; Recommended Reading - Weekly Quizzes</h2>
+<p>Starting Class 2, there will be a short quiz that will open on the <em>day of</em> each lecture, i.e.&nbsp;Mondays 7am. The quiz is designed to cover technical terminology and readings assigned the previous week. The course readings will be selected each week from the required course text <em>Essentials of Geographic Information Systems</em>. Students are responsible to complete each week’s readings and be ready for the quiz at the start of each week (quizzes will stay open throughout the day each Monday, and conclude each Monday at 8pm). A quiz code will be provided on a weekly basis to access each quiz. This quiz code will be located on each week’s agenda that will be sent out each Sunday evening prior to the upcoming week.</p>
+<section id="materials" class="level3">
+<h3 class="anchored" data-anchor-id="materials">Materials</h3>
+<p>During each class session, reading materials, GIS files and your notes can be on your local computer; materials and course access will happen generally online via Canvas and Slack. For moving GIS files and research materials back and forth, a USB drive is ideal. Further, online storage such as <a href="https://www.box.com/home">Box</a>, <a href="https://www.dropbox.com/home">Dropbox</a>, <a href="https://www.google.com/drive/">Google Drive</a> and <a href="https://www.amazon.com/clouddrive">Amazon Cloud Drive</a> is encouraged. Course lecture topics, readings and in-class exercise data will be available via the online course management location (Canvas); however, each student will be required to organize and maintain their own GIS data files, especially pertaining to the final project. These files should be consistently backed up across multiple locations.</p>
+</section>
+<section id="course-policies" class="level3">
+<h3 class="anchored" data-anchor-id="course-policies">Course Policies</h3>
+<ul>
+<li><p><strong>Email &amp; Course assignments:</strong> Students are required to maintain and check their TNS email account on a regular basis, except over official breaks. There will be a <a href="https://slack.com/">Slack</a> group established for the course; this will be the official channel for course communication, especially technical issues. For more personal/private issues, students can email instructor directly at the following address - <a href="mailto:metts.gis.nspe@gmail.com">email</a>. The course management software (Canvas) should be utilized during the week to accomplish each week’s assignment. Students are required to check in via the online course site to gain needed course materials and submit completed assignments. Students should be working through class assignments early in the week to be certain they understand the technical challenges of each assignment; and finalize these assignments prior to assignment deadlines, usually midnight each consecutive Sunday. Students that practice and prepare early in the week can avoid the stress that comes with a looming assignment deadline late in the week.</p></li>
+<li><p><strong>Academic Honesty:</strong> As part of the larger New School academic policy, plagiarism and cheating are unacceptable. Using other’s ideas, analysis and projects as one’s own is unacceptable. Being positively influenced by a methodology or past project is one thing; taking the details of that work and claiming them as your own is another. The university’s academic policy applies to both GIS projects and any theory and narrative responses that you will author throughout the course.</p></li>
+<li><p><strong>Adaptations:</strong> If you need course adaptations or accommodations because of a disability, emergency medical information to share with me, or if you need special arrangements, please bring it to my attention as soon as possible.</p></li>
+<li><p><strong>Attendance:</strong> Class attendance is mandatory. Students are expected to participate in each class session. Importantly, sequential coursework will be completed in a timely manner and uploaded by due dates per assignment/deliverable. As this course is sequential and depends heavily on weekly skills development to proceed to following weeks, any absences are consequential; and multiple absences quickly risk success in the course. If a students knows in advance of an absence, its critical to notify the faculty for arrangements. Approximately three absences will put a student at clear risk of a failing grade. It is your responsibility to make up work missed due to an absence. If you know in advance that you will miss a class you should notify faculty as a courtesy in advance. Your third absence will put you at risk of a failing grade in the course, as stated in the <a href="http://www.newschool.edu/forms/ss_student_handbook.pdf">Student Handbook</a>.</p></li>
+</ul>
+</section>
+</section>
+<section id="evaluation-and-grading" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation-and-grading">Evaluation and Grading</h2>
+<table class="table">
+<colgroup>
+<col style="width: 46%">
+<col style="width: 53%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Course Component</th>
+<th style="text-align: center;">Percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Weekly GIS technical assignments</td>
+<td style="text-align: center;">50%</td>
+</tr>
+<tr class="even">
+<td>Independent research, data development &amp; project scope (Final Project)</td>
+<td style="text-align: center;">10%</td>
+</tr>
+<tr class="odd">
+<td>Final GIS project presentation (Final Project)</td>
+<td style="text-align: center;">30%</td>
+</tr>
+<tr class="even">
+<td>Participation &amp; weekly quizzes</td>
+<td style="text-align: center;">10%</td>
+</tr>
+<tr class="odd">
+<td>Total</td>
+<td style="text-align: center;">100%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="grading-categories" class="level2">
+<h2 class="anchored" data-anchor-id="grading-categories">Grading Categories</h2>
+<ul>
+<li><p><strong>A/A-</strong> Students receiving an “A” grade show exceptional mastery over course material, and produce exceptionally engaging and unique final GIS projects. Student excels in all aspects of the weekly assignments and participates very actively in class discussions and activities. Throughout the class, students receiving A’s will consistently accomplish each week’s goals while further establishing their own interests and approaches to particular technical and research data issues in both the weekly course content and final GIS project.</p></li>
+<li><p><strong>B/B+</strong> Unlike C/C+ average work, students receiving a “B” grade show definitive engagement with all aspects of the class, complete assignments in a timely fashion, and produce an engaging final GIS project. Student offers own approach to class readings, and participates well with in-class exercises and activities. Students are engaged with instructor through questioning and feedback over course material to ensure course mastery.</p></li>
+<li><p><strong>C/C+</strong> Average work that shows some success in engaging with course concepts but no particular distinction or unique approaches to data collection, research concepts and final presentation. Student shows some participation with class discussion and exercises, but not a significant interest level to achieve real mastery over course concepts and material.</p></li>
+<li><p><strong>F</strong> An “F” grade will be given if partial required work is submitted; some classes are missed completely and work is not completed on a make-up basis. Weekly exercises are either completed late or not at all. General class concepts are not translated into the final GIS project. Limited participation in both in-class sessions and out-of-class research requirements.</p></li>
+<li><p><strong>I</strong> A grade of I (Incomplete), signifying a temporary deferment of a regular grade, may be assigned when coursework has been delayed at the end of the semester for unavoidable and legitimate reasons. Incomplete grades are given only with the written approval of the instructor and the program director. The Request for an Incomplete Grade form must be filled out by the student and instructor prior to the end of the semester. This grade option is only available for very uncommon, unforeseeable complicating issues as outlined in the student handbook. For undergraduate students, if a grade of incomplete is approved, outstanding work must be submitted by the seventh week of the following semester. Otherwise, a grade of I will automatically convert to a permanent unofficial withdrawal (WF) after a period of four weeks. For graduate students, the maximum deadline for completion of an incomplete is one year, though a shorter period may be imposed at the discretion of the instructor.</p></li>
+</ul>
 </section>
 
 </main>
