@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-02-04">
+<meta name="dcterms.date" content="2023-02-05">
 
 <title>Class 3 Lab: Introduction to Cartographic Principles + Thematic Mapping - Part I</title>
 <style>
@@ -54,6 +54,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#step-2" id="toc-step-2" class="nav-link" data-scroll-target="#step-2">Step 2</a></li>
   <li><a href="#step-3" id="toc-step-3" class="nav-link" data-scroll-target="#step-3">Step 3</a></li>
   <li><a href="#step-4" id="toc-step-4" class="nav-link" data-scroll-target="#step-4">Step 4</a></li>
+  <li><a href="#step-5" id="toc-step-5" class="nav-link" data-scroll-target="#step-5">Step 5</a></li>
   <li><a href="#step-6" id="toc-step-6" class="nav-link" data-scroll-target="#step-6">Step 6</a></li>
   <li><a href="#step-7" id="toc-step-7" class="nav-link" data-scroll-target="#step-7">Step 7</a></li>
   <li><a href="#step-8" id="toc-step-8" class="nav-link" data-scroll-target="#step-8">Step 8</a></li>
@@ -77,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 4, 2023</p>
+      <p class="date">February 5, 2023</p>
     </div>
   </div>
   
@@ -115,12 +116,26 @@ ul.task-list li input[type="checkbox"] {
 <li><p>For demonstration purposes, the assignment guide and the technical lab will utilize the country of Ukraine as the project Area of Interest. To select an Area of Interest from 1 of the 3 geographic scale levels, first label the respective feature polygon layer as follows:</p></li>
 </ul>
 <p><code>Right-click Feature Layer at Table of Contents (TOC) &gt; Properties &gt; Labels &gt; Label Field</code></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_lab-3_SP23_files/img/step.1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Label Field</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="step-2" class="level2">
 <h2 class="anchored" data-anchor-id="step-2">Step 2</h2>
 <ul>
-<li><p>Next, make a subset selection within the attribute table to select the feature - in this case Ukraine. Here will will make a simple SQL (Structured Query Language) declaration to select Ukraine (replace Ukraine with your choice of geography).</p></li>
-<li><p>Once the selection is complete (cyan colored outline will appear on map for the selected feature(s)), export to a folder you make entitled <code>exports</code> within your lab directory.</p></li>
+<li>Next, make a subset selection within the attribute table to select the feature - in this case Ukraine. Here will will make a simple SQL (Structured Query Language) declaration to select Ukraine (replace Ukraine with your choice of geography).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_lab-3_SP23_files/img/step.2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Select by Attribute</figcaption><p></p>
+</figure>
+</div>
+<ul>
+<li>Once the selection is complete (cyan colored outline will appear on map for the selected feature(s)), export to a folder you make entitled <code>exports</code> within your lab directory.</li>
 </ul>
 </section>
 <section id="step-3" class="level2">
@@ -128,6 +143,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Next map the <code>XY Table &gt; Feature Class</code> for the Global Power Plant Database. Your results when mapped should be atop Ukraine in this example:</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_lab-3_SP23_files/img/step.3.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><code>XY Table &gt; Feature Class</code> Global Power Plant Database</figcaption><p></p>
+</figure>
+</div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="STGIS_lab-3_SP23_files/img/8.png" class="img-fluid figure-img"></p>
@@ -139,8 +160,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_lab-3_SP23_files/img/10.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><code>Select by Location</code></figcaption><p></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.4.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Select by Location</figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -149,7 +170,15 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Remove the original Global Power Plant Feature Class from your TOC; create a <em>spatial bookmark</em>, centering your <em>Data Frame</em> to Ukraine in the example. Save the project <code>.mxd</code>:</li>
 </ul>
-<p><img src="STGIS_lab-3_SP23_files/img/11.png" class="img-fluid" alt="Geographic Focus for Main Map Frame"> ## Step 5</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_lab-3_SP23_files/img/11.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Geographic Focus for Main Map Frame</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="step-5" class="level2">
+<h2 class="anchored" data-anchor-id="step-5">Step 5</h2>
 <ul>
 <li><p>Next symbolize the Power Plant Feature Points across two dimensions:</p></li>
 <li><p>Categorical color for <code>Fuel Type</code></p></li>
@@ -158,8 +187,14 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/12.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Apply <code>Multiple Attribute</code> Symbology to the Power Plant Points within your geographic feature.</figcaption><p></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.5.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Apply <code>Multiple Attribute</code> Symbology to the Power Plant Points within the geographic feature.</figcaption><p></p>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_lab-3_SP23_files/img/step.6.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Apply <code>Multiple Attribute</code> Symbology to the Power Plant Points within the geographic feature: adding <code>Symbol Size</code></figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -168,6 +203,12 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>While the appearance is now correct at the Data Frame, the current legend item in the TOC shows each fuel type separately as 5 size classes. This legend appearance can be revised further for a better final legend. Here we will keep the current layer in the TOC, but we will save each color style for each fuel in the mapping to the <em>Styles Manager</em>.</li>
 </ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_lab-3_SP23_files/img/step.7.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Each fuel type separated as 5 size classes</figcaption><p></p>
+</figure>
+</div>
 <div class="callout-important callout callout-style-default callout-captioned">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -183,40 +224,26 @@ Tip
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/13.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.8.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Saving individual colorized symbols to the <em>Styles Manager</em></figcaption><p></p>
 </figure>
 </div>
 <ul>
-<li>Next, <em>Tooggle OFF</em> the primary layer and import a new instance of the layer and make additions from the <em>Styles Manager</em>:</li>
+<li>Next, <em>Tooggle OFF</em> the primary layer and import a new instance of the layer and make additions from the <em>Styles Manager</em>.</li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/14.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Access <em>Styles Manager</em> to import fuel type colors to the new layer</figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/15.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.9.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Managing the <em>Styles Manager</em></figcaption><p></p>
 </figure>
 </div>
 <ul>
-<li>Next, import another instance of the layer, and apply the proportional sizes to the layer, keeping only the symbol outline, not the default color. Make sure to continue to use <em>5 Class Natural Breaks</em> as the method in order to match with the main map symbolization for Power Plant capacity size:</li>
+<li><p>Next, import another instance of the layer, and apply the proportional sizes to the layer, keeping only the symbol outline, not the default color. Make sure to continue to use <em>5 Class Natural Breaks</em> as the method in order to match with the main map symbolization for Power Plant capacity size:</p></li>
+<li><p>Finally, detach the legend from the map items in the TOC by making the legend a <em>graphics feature</em>. This allows you to then <em>Toogle OFF</em> the symbolization layers in the TOC and allow the primary layer to be displayed in the map without complication from the overlapping symbolization layers:</p></li>
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/16.gif" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption">Apply the Proportional Symbols using the original <em>5 Class Natural Breaks</em></figcaption><p></p>
-</figure>
-</div>
-<ul>
-<li>Finally, detach the legend from the map items in the TOC by making the legend a <em>graphics feature</em>. This allows you to then <em>Toogle OFF</em> the symbolization layers in the TOC and allow the primary layer to be displayed in the map without complication from the overlapping symbolization layers:</li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/17.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.x.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Transform Legend Item to a Graphics Feature</figcaption><p></p>
 </figure>
 </div>
@@ -242,7 +269,7 @@ Tip
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/19.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.10.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Insert Scale Bar Item into Map Layout</figcaption><p></p>
 </figure>
 </div>
@@ -263,19 +290,19 @@ Tip
 </ul>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/20.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.12.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Insert New Data Frame into Map Layout</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/21.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.11.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Insert Bounding Box Geometry into New Data Frame (Option 1)</figcaption><p></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-3_SP23_files/img/22.gif" class="img-fluid figure-img"></p>
+<p><img src="STGIS_lab-3_SP23_files/img/step.13.png" class="img-fluid figure-img"></p>
 <p></p><figcaption class="figure-caption">Insert Extent Indicator into New Data Frame (Option 2)</figcaption><p></p>
 </figure>
 </div>
