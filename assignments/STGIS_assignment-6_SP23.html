@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-03-03">
+<meta name="dcterms.date" content="2023-03-05">
 
 <title>Class 6 Assignment: Map Projections</title>
 <style>
@@ -60,10 +60,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#assignment-step-6" id="toc-assignment-step-6" class="nav-link" data-scroll-target="#assignment-step-6">Assignment Step 6</a></li>
   <li><a href="#assignment-step-7" id="toc-assignment-step-7" class="nav-link" data-scroll-target="#assignment-step-7">Assignment Step 7</a></li>
   <li><a href="#map-layout-deliverable" id="toc-map-layout-deliverable" class="nav-link" data-scroll-target="#map-layout-deliverable">Map layout &amp; Deliverable:</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources:</a>
-  <ul class="collapse">
-  <li><a href="#further-reference" id="toc-further-reference" class="nav-link" data-scroll-target="#further-reference">Further Reference:</a></li>
-  </ul></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources:</a></li>
   </ul>
 </nav>
 </div>
@@ -83,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">March 3, 2023</p>
+      <p class="date">March 5, 2023</p>
     </div>
   </div>
   
@@ -269,13 +266,16 @@ Warning
 <section id="assignment-step-6" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-step-6">Assignment Step 6</h2>
 <ul>
-<li>Next, create summary statistics for land cover categories within your city’s vector boundary. To do this, utilize the <em>Field Calculator</em> to create 3 new columns:
+<li>Next, create summary statistics for land cover categories within your city’s vector boundary. To do this, utilize the <em>Field Calculator</em> to create 3 new columns:</li>
+</ul>
+<ol type="1">
+<li><code>AREA</code> as a double column</li>
+<li><code>Class</code> as a text column</li>
+<li><code>% Land</code> as a double column</li>
+</ol>
 <ul>
-<li>Area as square meters</li>
-<li>Area as square kilometers</li>
-<li>Percentage of land cover category relative to all land cover within your chosen city.</li>
-</ul></li>
-<li>Once complete, you will incorporate the output table into the final cartographic layout (use the same process as Assignment 2 and Assignment 5).</li>
+<li><p>Within the <code>AREA</code> column, you will run the <em>Calculate Geometry</em> tool accessed from the attribute table <code>AREA</code> column.</p></li>
+<li><p>Once complete, you will incorporate the output table into the final cartographic layout (use the same process as Assignment 2 and Assignment 5).</p></li>
 </ul>
 </section>
 <section id="assignment-step-7" class="level2">
@@ -402,7 +402,7 @@ Important
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Only use the land cover categories that are included in your final chosen city extent. Those that are not within your city extent, simply don’t include those in the final legend.</p>
+<p>Only use the land cover categories that are included in your final chosen city extent. Those that are not within your city extent, simply don’t include those in the final legend. Try to replicate the respective colors per land cover class, i.e.&nbsp;utilze a bright-red for the class <code>Built-up</code>, a yellow-orange for <code>Shurbland</code>, ect.</p>
 </div>
 </div>
 <ul>
@@ -435,8 +435,6 @@ Important
 </section>
 <section id="resources" class="level2">
 <h2 class="anchored" data-anchor-id="resources">Resources:</h2>
-<section id="further-reference" class="level3">
-<h3 class="anchored" data-anchor-id="further-reference">Further Reference:</h3>
 <ul>
 <li><p><a href="https://observablehq.com/@floledermann/projection-playground">Projection Playground</a></p></li>
 <li><p><a href="https://drive.google.com/file/d/1OlsgJC-LLJcf18iLZD511T83VW4uuNl6/view?usp=sharing">An Album of Map Projections</a></p></li>
@@ -447,7 +445,6 @@ Important
 <li><p><a href="https://www.azavea.com/blog/2015/12/21/tools-for-getting-data-out-of-openstreetmap-and-into-desktop-gis/">Tools for extracting OpenStreetMap and into Desktop GIS</a></p></li>
 <li><p>Interesting Article on the Dymaxion Map Projection: <a href="http://architizer.com/blog/reinterpreting-bucky-fullers-dymaxion-map/">Reinterpreting Bucky Fuller’s Dymaxion Map</a></p></li>
 </ul>
-</section>
 </section>
 
 </main>
