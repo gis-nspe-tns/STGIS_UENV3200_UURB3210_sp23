@@ -209,10 +209,10 @@ Note
 <section id="assignment-step-7" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-step-7">Assignment Step 7</h2>
 <p>Derive <code>% of contamination</code> per district:</p>
-<p>As a result of Step #4 above, both AREA for districts as well as AREA for contaminated sq. area (meters) now exists in the attribute table for contaminated_districts - the result of the Clip geoprocessing. The following steps will create a normalized column for % of each district that is contaminated. This is needed to know the relative levels of contamination across all districts in Kosovo.</p>
+<p>As a result of Step #6 above, both AREA for districts as well as AREA for contaminated sq. area (meters) now exists in the attribute table for contaminated_districts - the result of the Clip geoprocessing. The following steps will create a normalized column for % of each district that is contaminated. This is needed to know the relative levels of contamination across all districts in Kosovo.</p>
 <p>Use the following expression for % contaminated:</p>
-<p>“AREA of contamination” / “AREA of district” * 100</p>
-<p>Use Add field to create a new column that will house % contaminated. Name the field/column <code>PCTCNTM</code></p>
+<p><code>"AREA of contamination"  /  "AREA of district"  * 100</code></p>
+<p>Use <em>Add field</em> to create a new column that will house % contaminated. Name the field/column <code>PCT_CNTM</code></p>
 </section>
 <section id="assignment-step-8" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-step-8">Assignment Step 8</h2>
@@ -248,11 +248,11 @@ Note
 </tr>
 </tbody>
 </table>
-<p>To start, create a column entitled <code>LVLCONTM</code> via <code>Add field</code>, text type with an length of 10. This will be the column for Level Descriptions.</p>
+<p>To start, create a column entitled <code>LVL_CONTM</code> via <em>Add field</em>, text type with an length of 50 (default). This will be the column for Level Descriptions.</p>
 </section>
 <section id="assignment-step-9" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-step-9">Assignment Step 9</h2>
-<p>Select and Assign ordinal levels to active SQL selections within the column <code>PCTCNTM</code>, applying the 4 threshold conditions to the <code>LVLCONTM</code> column.</p>
+<p>Select and assign ordinal levels to active SQL selections within the column <code>PCT_CNTM</code>, applying the 4 threshold conditions to the <code>LVL_CONTM</code> column, minus the “NONE” value which you will do at the end of the assignment.</p>
 </section>
 <section id="assignment-step-10" class="level2">
 <h2 class="anchored" data-anchor-id="assignment-step-10">Assignment Step 10</h2>
@@ -261,7 +261,7 @@ Note
 <section id="assignment-step-11" class="level3">
 <h3 class="anchored" data-anchor-id="assignment-step-11">Assignment Step 11</h3>
 <p>Thematically map ‘Level of ERW Contamination’:</p>
-<p>Utilize the <code>LVLCONTM</code> column as input into ordinal categories for thematic mapping. Design your classes so that those districts with high contamination appear dense relative to medium and low classes. Make sure to visually segment the districts that have no contamination (<code>NULL</code>) separate from the classes that do indeed have some level of contamination as its especially important to separate none from low.</p>
+<p>Utilize the <code>LVL_CONTM</code> column as input into ordinal categories for thematic mapping. Design your classes so that those districts with high contamination appear dense relative to medium and low classes. Make sure to visually segment the districts that have no contamination (<code>NULL</code>) separate from the classes that do indeed have some level of contamination as its especially important to separate none from low.</p>
 <ul>
 <li>Refer to <em>Map Layout &amp; Deliverable</em> below for other cartographic details.</li>
 </ul>
