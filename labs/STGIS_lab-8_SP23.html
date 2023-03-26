@@ -55,12 +55,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#assignment-step-3---rasterization-euclidean-distance-surface-for-water-features" id="toc-assignment-step-3---rasterization-euclidean-distance-surface-for-water-features" class="nav-link" data-scroll-target="#assignment-step-3---rasterization-euclidean-distance-surface-for-water-features">Assignment Step 3 - Rasterization + Euclidean Distance Surface for Water Features</a></li>
   <li><a href="#assignment-step-4---data-preprocessing-for-the-roads-feature" id="toc-assignment-step-4---data-preprocessing-for-the-roads-feature" class="nav-link" data-scroll-target="#assignment-step-4---data-preprocessing-for-the-roads-feature">Assignment Step 4 - Data preprocessing for the roads feature</a></li>
   <li><a href="#assignment-step-5---rasterization-euclidean-distance-surface-for-roads-features" id="toc-assignment-step-5---rasterization-euclidean-distance-surface-for-roads-features" class="nav-link" data-scroll-target="#assignment-step-5---rasterization-euclidean-distance-surface-for-roads-features">Assignment Step 5 - Rasterization + Euclidean Distance Surface for Roads Features</a></li>
-  <li><a href="#assignment-step-5---rasterization-of-protected-regions" id="toc-assignment-step-5---rasterization-of-protected-regions" class="nav-link" data-scroll-target="#assignment-step-5---rasterization-of-protected-regions">Assignment Step 5 - Rasterization of Protected Regions</a></li>
-  <li><a href="#assignment-step-6---reclassification-of-water-proximity-distances" id="toc-assignment-step-6---reclassification-of-water-proximity-distances" class="nav-link" data-scroll-target="#assignment-step-6---reclassification-of-water-proximity-distances">Assignment Step 6 - Reclassification of Water Proximity Distances</a></li>
-  <li><a href="#assignment-step-7---reclassification-of-roads-proximity-distances" id="toc-assignment-step-7---reclassification-of-roads-proximity-distances" class="nav-link" data-scroll-target="#assignment-step-7---reclassification-of-roads-proximity-distances">Assignment Step 7 - Reclassification of Roads Proximity Distances</a></li>
-  <li><a href="#assignment-step-8---suitability-combination" id="toc-assignment-step-8---suitability-combination" class="nav-link" data-scroll-target="#assignment-step-8---suitability-combination">Assignment Step 8 - Suitability Combination</a></li>
-  <li><a href="#assignment-step-9---preparation-for-cartographic-design---hillshade-surface" id="toc-assignment-step-9---preparation-for-cartographic-design---hillshade-surface" class="nav-link" data-scroll-target="#assignment-step-9---preparation-for-cartographic-design---hillshade-surface">Assignment Step 9 - Preparation for Cartographic Design - Hillshade Surface</a></li>
-  <li><a href="#assignment-step-10---preparation-for-cartographic-design---final-suitability-selection" id="toc-assignment-step-10---preparation-for-cartographic-design---final-suitability-selection" class="nav-link" data-scroll-target="#assignment-step-10---preparation-for-cartographic-design---final-suitability-selection">Assignment Step 10 - Preparation for Cartographic Design - Final Suitability Selection</a></li>
+  <li><a href="#assignment-step-6---rasterization-of-protected-regions" id="toc-assignment-step-6---rasterization-of-protected-regions" class="nav-link" data-scroll-target="#assignment-step-6---rasterization-of-protected-regions">Assignment Step 6 - Rasterization of Protected Regions</a></li>
+  <li><a href="#assignment-step-7---reclassification-of-water-proximity-distances" id="toc-assignment-step-7---reclassification-of-water-proximity-distances" class="nav-link" data-scroll-target="#assignment-step-7---reclassification-of-water-proximity-distances">Assignment Step 7 - Reclassification of Water Proximity Distances</a></li>
+  <li><a href="#assignment-step-8---reclassification-of-roads-proximity-distances" id="toc-assignment-step-8---reclassification-of-roads-proximity-distances" class="nav-link" data-scroll-target="#assignment-step-8---reclassification-of-roads-proximity-distances">Assignment Step 8 - Reclassification of Roads Proximity Distances</a></li>
+  <li><a href="#assignment-step-9---suitability-combination" id="toc-assignment-step-9---suitability-combination" class="nav-link" data-scroll-target="#assignment-step-9---suitability-combination">Assignment Step 9 - Suitability Combination</a></li>
+  <li><a href="#assignment-step-10---preparation-for-cartographic-design---hillshade-surface" id="toc-assignment-step-10---preparation-for-cartographic-design---hillshade-surface" class="nav-link" data-scroll-target="#assignment-step-10---preparation-for-cartographic-design---hillshade-surface">Assignment Step 10 - Preparation for Cartographic Design - Hillshade Surface</a></li>
+  <li><a href="#assignment-step-11---preparation-for-cartographic-design---final-suitability-selection" id="toc-assignment-step-11---preparation-for-cartographic-design---final-suitability-selection" class="nav-link" data-scroll-target="#assignment-step-11---preparation-for-cartographic-design---final-suitability-selection">Assignment Step 11 - Preparation for Cartographic Design - Final Suitability Selection</a></li>
   <li><a href="#map-layout-deliverable" id="toc-map-layout-deliverable" class="nav-link" data-scroll-target="#map-layout-deliverable">Map layout &amp; Deliverable:</a></li>
   <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources:</a></li>
   </ul>
@@ -433,8 +433,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="assignment-step-5---rasterization-of-protected-regions" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-step-5---rasterization-of-protected-regions">Assignment Step 5 - Rasterization of Protected Regions</h2>
+<section id="assignment-step-6---rasterization-of-protected-regions" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-6---rasterization-of-protected-regions">Assignment Step 6 - Rasterization of Protected Regions</h2>
 <p>With both water and road features processed to distance surfaces, the next step is to rasterize the protected regions. This feature will be represented by a boolean logic where the true value is inside the protected region as <code>1</code> and a false condition of <code>NoData</code>. In this way, no suitability will be allowed to partake of the protected region <code>1</code> value.</p>
 <p>Create the <code>grid_ID</code> for the protected regions feature in the attribute table for this layer. When set, move to DISSOLVE.</p>
 <p>Parameters:</p>
@@ -488,8 +488,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="assignment-step-6---reclassification-of-water-proximity-distances" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-step-6---reclassification-of-water-proximity-distances">Assignment Step 6 - Reclassification of Water Proximity Distances</h2>
+<section id="assignment-step-7---reclassification-of-water-proximity-distances" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-7---reclassification-of-water-proximity-distances">Assignment Step 7 - Reclassification of Water Proximity Distances</h2>
 <p>With Rasterization and Euclidean Distance processing complete, continuous cell values for the various distances will be assigned. Here the goal is to produce meaningful, discrete ordinal scaling for suitability across the three input themes - water distances, roads distances and protected regions as a boolean condition true/false.</p>
 <p>This process will involve a RECLASS whereby continuous cell values are returned as discrete integer categorical values when they met certain conditions. This process can be done several ways, including <a href="https://pro.arcgis.com/en/pro-app/latest/tool-reference/spatial-analyst/reclassify.htm">RECLASSIFY</a> and a tailored equation constructed within <a href="https://desktop.arcgis.com/en/arcmap/latest/tools/spatial-analyst-toolbox/raster-calculator.htm">RASTER CALCULATOR</a></p>
 <p>To start, highlight the <code>water_distance_60m.tif</code> raster layer in the TOC and then search for <em>Raster Calculator</em> in <em>Search</em>:</p>
@@ -521,8 +521,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="assignment-step-7---reclassification-of-roads-proximity-distances" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-step-7---reclassification-of-roads-proximity-distances">Assignment Step 7 - Reclassification of Roads Proximity Distances</h2>
+<section id="assignment-step-8---reclassification-of-roads-proximity-distances" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-8---reclassification-of-roads-proximity-distances">Assignment Step 8 - Reclassification of Roads Proximity Distances</h2>
 <p>In this reclassification, the ordering of the ordinal values will be reversed. Here ‘closeness’ is an opportunity, whereas in water ‘closeness’ is a constraint:</p>
 <p>Reclassification Assignments:</p>
 <pre><code>0-1000m –&gt; 100
@@ -547,8 +547,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="assignment-step-8---suitability-combination" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-step-8---suitability-combination">Assignment Step 8 - Suitability Combination</h2>
+<section id="assignment-step-9---suitability-combination" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-9---suitability-combination">Assignment Step 9 - Suitability Combination</h2>
 <p>With all discrete raster outputs complete for water distance, roads distance and protected regions, the next step is to create a combination layer. Again the RASTER CALCULATOR can be used for this process.</p>
 <p>To start, we will need the snap our results to the state boundary. This can be added to our equation, but first we need to RASTERIZE the <code>boundary</code> layer using the same <code>grid_ID</code> process as with prior layers:</p>
 <p>Parameters for the <em>Feature to Raster</em> tool:</p>
@@ -671,8 +671,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="assignment-step-9---preparation-for-cartographic-design---hillshade-surface" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-step-9---preparation-for-cartographic-design---hillshade-surface">Assignment Step 9 - Preparation for Cartographic Design - Hillshade Surface</h2>
+<section id="assignment-step-10---preparation-for-cartographic-design---hillshade-surface" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-10---preparation-for-cartographic-design---hillshade-surface">Assignment Step 10 - Preparation for Cartographic Design - Hillshade Surface</h2>
 <p>With the bulk of the suitability now complete, we will utilize a raster surface function known as <a href="https://pro.arcgis.com/en/pro-app/latest/help/analysis/raster-functions/hillshade-function.htm">hillshade</a> to augment the design process:</p>
 <blockquote class="blockquote">
 <p>Multidirectional hillshade improves terrain visualization. It combines light from six different directions to represent an enhanced visualization of the terrain and to improve the appearance of regions with low relief. It improves the balance between the overexposed and shadow areas of the map. The output is suitable to use as a relief backdrop for topographical, soil, hydrological, land cover, or other thematic maps in which the data will be enhanced with topography.</p>
@@ -711,8 +711,8 @@ Note
 </figure>
 </div>
 </section>
-<section id="assignment-step-10---preparation-for-cartographic-design---final-suitability-selection" class="level2">
-<h2 class="anchored" data-anchor-id="assignment-step-10---preparation-for-cartographic-design---final-suitability-selection">Assignment Step 10 - Preparation for Cartographic Design - Final Suitability Selection</h2>
+<section id="assignment-step-11---preparation-for-cartographic-design---final-suitability-selection" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-11---preparation-for-cartographic-design---final-suitability-selection">Assignment Step 11 - Preparation for Cartographic Design - Final Suitability Selection</h2>
 <p>At this juncture, the <em>Highly Suitable</em> class is obviously dispersed through the project area. To subset to a final suitability, a total square area criteria is often applied to the suitability model. Here a site requirement is typically a threshold between the lowest and highest optimal areal size for a particular land use, project or development. Here we will assume a project site needs at least <strong>800 acres</strong>, but not more than <strong>1000 acres</strong>. We will make these selections in the vector model and show the results in the cartographic output as vector features atop the final suitability result.</p>
 <p>To start, RECLASSIFY the final suitability layer to <em>isolate</em> just those cells in the 200 class, and save the result as <code>HS</code> for <em>high suitability</em>. Here all values that are NOT the 200 class become <code>NoData</code>; the 200 class then becomes <code>1</code>:</p>
 <div class="quarto-figure quarto-figure-center">
@@ -806,7 +806,7 @@ Note
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="STGIS_lab-8_SP23_files/img/cartographic-example.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Example Layout - Assignment 7</em></figcaption><p></p>
+<p></p><figcaption class="figure-caption"><em>Example Layout - Assignment 8</em></figcaption><p></p>
 </figure>
 </div></li>
 <li><p>Utilize the following map example to guide your design process:</p></li>
