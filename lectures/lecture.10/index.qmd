@@ -1,0 +1,430 @@
+---
+title: "Class 10 - Lecture"
+subtitle: "Introduction to Remote Sensing"
+format:
+  revealjs: 
+    slide-number: true
+    theme: [index_files/custom.scss]
+    touch: true
+    incremental: true   
+resources:
+  - demo.pdf
+---
+
+## Remote Sensing
+
+![](index_files/img/1.gif){.absolute top="120" left="210" width="600"}
+
+::: footer
+Source:[Planet's Satellite Constellation](https://nbremer.github.io/planet-globe/)
+:::
+
+## Remote Sensing
+
+### Remote Sensing (RS) Definition:
+
+![](index_files/img/2.png){.absolute top="290" left="150" width="800"}
+
+::: footer
+Source:[Planet's Satellite Constellation](https://nbremer.github.io/planet-globe/)
+:::
+
+## Remote Sensing
+
+### Sputnik 1957 - First Artificial Earth Satellite
+
+{{< video https://upload.wikimedia.org/wikipedia/commons/6/62/1957-10-07_New_Moon.ogv width="640" height="480" >}}
+
+::: footer
+Source:[First Space Satellite, 1957/10/07](https://archive.org/details/1957-10-07_New_Moon)
+:::
+
+## Remote Sensing
+
+### Operational Satellite Orbits
+
+![](index_files/img/orbit.gif){.absolute top="190" left="120" width="800"}
+
+::: footer
+Source:[Satellite Constellation](https://pudding.cool/2017/10/satellites/)
+:::
+
+## Remote Sensing
+
+### NASA Earth Observation Program
+
+![](index_files/img/nasa-program.png){.absolute top="190" left="120" width="800"}
+
+::: footer
+Source:[NASA Program](http://www.geo.uzh.ch/microsite/rsl-documents/teaching/BSc/geo123/2015/GEO123.1_Lecture_08_FS2015_EarthResourceSatellites_dpi220.pdf)
+:::
+
+## Remote Sensing
+
+### Landsat 7 Satellite
+
+![](index_files/img/landsat.gif){.absolute top="200" left="220" width="600"}
+
+::: footer
+Source:[First Space Satellite, 1957/10/07](https://pudding.cool/2017/10/satellites/)
+:::
+
+## Remote Sensing
+
+### Landsat 8 - 2 push-broom instruments: Operational Land Imager (OLI) & Thermal Infrared Sensor (TIRS)
+
+![](index_files/img/10.png){.absolute top="320" left="260" width="500"}
+
+::: footer
+Source:[Landsat 8 Sensor](http://takor.com.au/2013/04/15/landsat-8-operational-land-imager-instrument-design/)
+:::
+
+## Remote Sensing
+
+##### Landsat collects images in long narrow strips called “swaths.” Each swath is 185 kilometers (115 miles) wide and is 2,752 kilometers (1,710 miles) from the next adjacent swath taken that day. It takes 16 days for the swaths to overlap enough to image the whole Earth.
+
+![](index_files/img/6.png){.absolute top="340" left="320" width="400"}
+
+::: footer
+Source:[Landsat 7](https://www.nasa.gov/directorates/heo/scan/services/missions/earth/Landsat7.html)
+:::
+
+## Remote Sensing
+
+### Satellite Imagery- IFOV ‘Swath’
+
+![](index_files/img/7.png){.absolute top="180" left="240" width="500"}
+
+::: footer
+Source:[Swath on Pushbroom Scanner](http://www.geo.uzh.ch/microsite/rsl-documents/teaching/BSc/geo123/2015/GEO123.1_Lecture_08_FS2015_EarthResourceSatellites_dpi220.pdf)
+:::
+
+## Remote Sensing
+
+##### Passive Sensors (Landsat) ‘capture’ reflected energy across electromagnetic spectrum’
+
+![](index_files/img/11.png){.absolute top="220" left="270" width="500"}
+
+
+## Remote Sensing
+
+### Active vs Passive Sensors
+
+![](index_files/img/sensors.png){.absolute top="140" left="230" width="600"}
+
+::: footer
+Source:[Active vs Passive Sensors](https://gisgeography.com/passive-active-sensors-remote-sensing/)
+:::
+
+## Remote Sensing
+
+### Four Resolutions
+
+::: {.incremental}
+- Spatial
+- Spectral
+- Temporal
+- Radiometric
+:::
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 1:
+
+![](index_files/img/14.png){.absolute top="240" left="130" width="800"}
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 1:
+
+![](index_files/img/15.png){.absolute top="180" left="210" width="600"}
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 1:
+
+##### Spatial Resolution - size of pixel in a raster image - relationship w/ ground units
+
+![](index_files/img/resolution.1.gif){.absolute top="300" left="380" width="280"}
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 1:
+
+##### Landsat spatial Resolution - 30m (change over time)
+
+![](index_files/img/resolution.2.gif){.absolute top="280" left="200" width="650"}
+
+::: footer
+Source:[NASA | Landsat](https://landsat.gsfc.nasa.gov/satellites/landsat-8/)
+:::
+
+## Remote Sensing
+
+### Resolution 2:
+
+![](index_files/img/17.png){.absolute top="240" left="130" width="800"}
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 2:
+
+![](index_files/img/19.png){.absolute top="240" left="270" width="500"}
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 2:
+
+![](index_files/img/band.png){.absolute top="170" left="140" width="800"}
+
+::: footer
+Source:[RS Landsat Bands](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-bands/)
+:::
+
+## Remote Sensing
+
+### Resolution 3:
+
+![](index_files/img/20.png){.absolute top="270" left="150" width="800"}
+
+::: footer
+Source:[RS Resolutions](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Resolution 3:
+
+![](index_files/img/21.png){.absolute top="190" left="250" width="500"}
+
+::: footer
+Source:[Landsat](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-bands/)
+:::
+
+## Remote Sensing
+
+### Resolution 3:
+
+{{< video https://youtu.be/xBhorGs8uy8 width="640" height="480" >}}
+
+::: footer
+Source:[Landsat](https://landsat.gsfc.nasa.gov/satellites/landsat-9/landsat-9-bands/)
+:::
+
+## Remote Sensing
+
+### Resolution 4:
+
+![](index_files/img/23.png){.absolute top="220" left="100" width="800"}
+
+::: footer
+Source:[RS Radiometric Resolution](https://gisgeography.com/bit-depth/)
+:::
+
+## Remote Sensing
+
+### Resolution 4:
+
+![](index_files/img/resolution-chart.png){.absolute top="150" left="260" width="500"}
+
+::: footer
+Source:[RS Radiometric Resolution](https://gisgeography.com/bit-depth/)
+:::
+
+## Remote Sensing
+
+### Multi-Spectral Band Structure
+
+![](index_files/img/26.png){.absolute top="200" left="260" width="500"}
+
+::: footer
+Source:[RS Multi-Spectral Imagery](https://en.wikipedia.org/wiki/Remote_sensing)
+:::
+
+## Remote Sensing
+
+### Multi-Spectral Band Structure - Band Combinations
+
+![](index_files/img/27.gif){.absolute top="230" left="240" width="550"}
+
+::: footer
+Source:[RS Band Combinations](https://gisgeography.com/sentinel-2-bands-combinations/)
+:::
+
+## Remote Sensing
+
+### Change Detection
+
+![](index_files/img/30.png){.absolute top="190" left="350" width="350"}
+
+::: footer
+Source:[RS Researchgate](https://www.researchgate.net/publication/230738894_Peri-Urban_to_Urban_Landscape_Patterns_Elucidation_through_Spatial_Metrics)
+:::
+
+## Remote Sensing
+
+### Change Detection
+
+![](index_files/img/29.png){.absolute top="170" left="100" width="900"}
+
+::: footer
+Source:[Landsat | NASA](https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/412_L.jpg)
+:::
+
+## Remote Sensing
+
+### Landcover Classification
+
+![](index_files/img/31.png){.absolute top="170" left="100" width="900"}
+
+::: footer
+Source:[ESA Global Land Cover](https://www.esa.int/Applications/Observing_the_Earth/Space_for_our_climate/ESA_global_land_cover_map_available_online)
+:::
+
+## Remote Sensing
+
+### Image Classification - Unsupervised
+
+![](index_files/img/34.png){.absolute top="220" left="230" width="350"}
+
+## Remote Sensing
+
+### Image Classification - Supervised
+
+![](index_files/img/33.png){.absolute top="230" left="250" width="450"}
+
+
+## Remote Sensing
+
+### Spectral Indices
+
+![](index_files/img/SR-SI-images.gif){.absolute top="200" left="330" width="400"}
+
+::: footer
+Source:[Spectral Indices](https://www.usgs.gov/core-science-systems/nli/landsat/landsat-surface-reflectance-derived-spectral-indices?qt-science_support_page_related_con=0#qt-science_support_page_related_con)
+:::
+
+## Remote Sensing
+
+#### Spectral indices are combinations of the pixel values from *two or more spectral bands* in a multispectral image. Spectral indices are designed to highlight pixels showing the relative abundance or lack of a land-cover type of interest in an image.
+
+![](index_files/img/indices.2.png){.absolute top="340" left="230" width="600"}
+
+::: footer
+Source:[Spectral Indices](https://www.esri.com/about/newsroom/arcuser/spectral-library/)
+:::
+
+## Remote Sensing
+
+### Landsat Program Spectral Indices
+
+![](index_files/img/indices.10.png){.absolute top="200" left="210" width="650"}
+
+::: footer
+Source:[Spectral Indices](https://www.esri.com/about/newsroom/arcuser/spectral-library/)
+:::
+
+## Remote Sensing
+
+##### The most common index is the Normalized Difference Vegetation Index (NDVI), which provides an indication of abundance of vegetation by comparing the different reflectance values of the red and near-infrared bands (normalized such that the minimum value is -1.0, and the maximum is +1.0).
+
+![](index_files/img/indices.1.png){.absolute top="350" left="350" width="350"}
+
+::: footer
+Source:[Spectral Indices](https://blog.onesoil.ai/en/what-is-ndvi)
+:::
+
+## Remote Sensing
+
+### NDVI Equation:
+
+![](index_files/img/indices.6.png){.absolute top="300" left="70" width="950"}
+
+::: footer
+Source:[Spectral Indices](https://blog.onesoil.ai/en/what-is-ndvi)
+:::
+
+## Remote Sensing
+
+### Normalized Burn Index:
+
+![](index_files/img/indices.7.png){.absolute top="180" left="200" width="750"}
+
+::: footer
+Source:[Spectral Indices](https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-modis/normalized-burn-index-dNBR/)
+:::
+
+## Remote Sensing
+
+### NBR Equation:
+
+![](index_files/img/indices.5.png){.absolute top="200" left="150" width="800"}
+
+::: footer
+Source:[Spectral Indices](https://www.earthdatascience.org/courses/earth-analytics/multispectral-remote-sensing-modis/normalized-burn-index-dNBR/)
+:::
+
+## Remote Sensing
+
+#### Landsat Analaysis Ready Datasets (ARD)
+#### New Product - 2016 > Present
+
+![](index_files/img/ard1.png){.absolute top="210" left="170" width="750"}
+
+::: footer
+Source:[ARD Datasets](https://www.usgs.gov/core-science-systems/nli/landsat/us-landsat-analysis-ready-data?qt-science_support_page_related_con=0#qt-science_support_page_related_con)
+:::
+
+## Remote Sensing
+
+#### Landsat Analaysis Ready Datasets (ARD)
+
+![](index_files/img/ard3.png){.absolute top="220" left="80" width="850"}
+
+::: footer
+Source:[ARD Tile Structure](https://landsat.usgs.gov/ard_tile)
+:::
+
+## Remote Sensing
+
+#### Landsat Analaysis Ready Datasets (ARD)
+
+![](index_files/img/ard4.png){.absolute top="160" left="200" width="650"}
+
+::: footer
+Source:[ARD Tile Structure](https://landsat.usgs.gov/ard_tile)
+:::
+
+## Remote Sensing
+
+#### Landsat Analaysis Ready Datasets (ARD)
+
+![](index_files/img/ard5.png){.absolute top="350" left="150" width="750"}
+
+::: footer
+Source:[ARD Tile Structure](https://landsat.usgs.gov/ard_tile)
+:::
