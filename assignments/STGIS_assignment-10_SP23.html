@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2023-04-08">
+<meta name="dcterms.date" content="2023-04-09">
 
 <title>Class 10 Assignment: Remote Sensing Landsat ARD - Surface Temperature &amp; NDIV for Urban Spaces</title>
 <style>
@@ -78,7 +78,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">April 8, 2023</p>
+      <p class="date">April 9, 2023</p>
     </div>
   </div>
   
@@ -114,16 +114,16 @@ ul.task-list li input[type="checkbox"] {
 </figure>
 </div>
 <blockquote class="blockquote">
-<p>Note: The <a href="https://www.dropbox.com/s/tj0kfoy6sxrzf2h/c10_assignment_data.zip?dl=1">C10 Data Pacakge</a> features the ARD grid utilized early in the assignment to determine the horizontal and vertical position of the assignment AOI. Once done, two empty folders are provided for the surface temperature data (ARD_ST) and the surface reflectance data (ARD_SR). When accessing data at <a href="https://earthexplorer.usgs.gov/">EarthExplorer</a>, the results can be placed in the ARD_ST and ARD_SR folders, respectively, to keep assignment organization.</p>
+<p>Note: The <a href="https://www.dropbox.com/s/p5sk8pd1qqiktrh/c10_assignment_data.zip?dl=1">C10 Data Pacakge</a> features the ARD grid utilized early in the assignment to determine the horizontal and vertical position of the assignment AOI. Once done, two empty folders are provided for the surface temperature data (ARD_ST) and the surface reflectance data (ARD_SR). When accessing data at <a href="https://earthexplorer.usgs.gov/">EarthExplorer</a>, the results can be placed in the ARD_ST and ARD_SR folders, respectively, to keep assignment organization.</p>
 </blockquote>
 <ul>
-<li><a href="https://www.dropbox.com/s/tj0kfoy6sxrzf2h/c10_assignment_data.zip?dl=1">Location of Class 10 Assignment Direct Data Download</a></li>
+<li><a href="https://www.dropbox.com/s/p5sk8pd1qqiktrh/c10_assignment_data.zip?dl=1">Location of Class 10 Assignment Direct Data Download</a></li>
 </ul>
 <p>To begin the assignment, download and access the assignment directory. Create a new assignment <code>.mxd</code> and connect <em>Data Source Manager</em> to the assignment directory to import the <strong>ARD grid shapefile</strong> - <code>conus_ard_grid.shp</code>:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="STGIS_assignment-10_SP23_files/img/ard.grid.1.png" class="img-fluid figure-img"></p>
-<p></p><figcaption class="figure-caption"><em>Conus ARD Grid - horizontal grid value TOP; vertical grid value BOTTOM</em></figcaption><p></p>
+<p><img src="STGIS_assignment-10_SP23_files/img/grid.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Conus ARD Grid - horizontal grid value <code>h</code>; vertical grid value <code>v</code></em></figcaption><p></p>
 </figure>
 </div>
 </section>
@@ -143,6 +143,9 @@ ul.task-list li input[type="checkbox"] {
 <li><strong>Acquire Landsat 8 ARD Imagery for both surface reflectance and temperature values</strong></li>
 </ul>
 <p>To Start, the demonstration of the assignment will rely on both the general process and sample imagery for the city of Springfield, MO. This is known as the Area of Interest (AOI); the imagery date is the height of summer on June 20th, 2021 at approximately 10:50 am (more on how to determine time of the imagery later in the assignment).</p>
+<ul>
+<li><a href="https://www.dropbox.com/s/zao9ijc0k2juh10/c10_lecture_demo.data.zip?dl=1">Demonstration Data for Springfield, MO</a></li>
+</ul>
 <p>For your own deliverable, you will choose a separate city as your AOI, utilizing the following steps to proceed to surface temperature and NDVI index products featured in the assignment result. Make sure to place the Landsat 8 product into both the <code>ARD_SR</code> and <code>ARD_ST</code> directories:</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
