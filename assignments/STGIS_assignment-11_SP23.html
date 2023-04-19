@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.280">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2023-04-18">
+
+<title>Class 11 Assignment: : Mapping and Analysis with ArcGIS Online (AGOL)</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="STGIS_assignment-11_SP23_files/libs/clipboard/clipboard.min.js"></script>
+<script src="STGIS_assignment-11_SP23_files/libs/quarto-html/quarto.js"></script>
+<script src="STGIS_assignment-11_SP23_files/libs/quarto-html/popper.min.js"></script>
+<script src="STGIS_assignment-11_SP23_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="STGIS_assignment-11_SP23_files/libs/quarto-html/anchor.min.js"></script>
+<link href="STGIS_assignment-11_SP23_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="STGIS_assignment-11_SP23_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="STGIS_assignment-11_SP23_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="STGIS_assignment-11_SP23_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="STGIS_assignment-11_SP23_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="STGIS_assignment-11_SP23_files/styles.css">
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#preamble" id="toc-preamble" class="nav-link active" data-scroll-target="#preamble">Preamble</a></li>
+  <li><a href="#assignment-11---data" id="toc-assignment-11---data" class="nav-link" data-scroll-target="#assignment-11---data">Assignment 11 - Data</a></li>
+  <li><a href="#class-11-readings" id="toc-class-11-readings" class="nav-link" data-scroll-target="#class-11-readings">Class 11 Readings:</a></li>
+  <li><a href="#assignment-step-1" id="toc-assignment-step-1" class="nav-link" data-scroll-target="#assignment-step-1">Assignment Step 1</a></li>
+  <li><a href="#assignment-step-2" id="toc-assignment-step-2" class="nav-link" data-scroll-target="#assignment-step-2">Assignment Step 2</a></li>
+  <li><a href="#assignment-option-1" id="toc-assignment-option-1" class="nav-link" data-scroll-target="#assignment-option-1">Assignment Option 1</a></li>
+  <li><a href="#assignment-option-2" id="toc-assignment-option-2" class="nav-link" data-scroll-target="#assignment-option-2">Assignment Option 2</a></li>
+  <li><a href="#assignment-option-3" id="toc-assignment-option-3" class="nav-link" data-scroll-target="#assignment-option-3">Assignment Option 3</a></li>
+  <li><a href="#assignment-option-4" id="toc-assignment-option-4" class="nav-link" data-scroll-target="#assignment-option-4">Assignment Option 4</a></li>
+  <li><a href="#assignment-11-deliverable" id="toc-assignment-11-deliverable" class="nav-link" data-scroll-target="#assignment-11-deliverable">Assignment 11 Deliverable</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources:</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Class 11 Assignment: : Mapping and Analysis with ArcGIS Online (AGOL)</h1>
+<p class="subtitle lead">Spring 2023 | <a href="https://courses.newschool.edu/courses/UENV3200/">UENV3200</a>, <a href="https://courses.newschool.edu/courses/UURB3210/">UURB3210</a></p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">April 18, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_assignment-11_SP23_files/img/1.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>ArcGIS Online</em></figcaption><p></p>
+</figure>
+</div>
+<section id="preamble" class="level2">
+<h2 class="anchored" data-anchor-id="preamble">Preamble</h2>
+<p>In this eleventh assignment, you will utilize the <a href="https://gis-nspe-tns.github.io/STGIS_UENV3200_UURB3210_sp23/labs/STGIS_lab-11_SP23.html">Class 11 Technical Lab</a> as a guide to complete your eleventh mapping project utilzing ArcGIS Online. In this assignment , you will make a choice of analysis methods introduced in the technical lab. You will choose at least one vector dataset of your choice to upload to ArcGIS Online, and then run your chosen analysis method on the vector input. You can choose from the following methods (including creating a basemap in Mapbox):</p>
+<ol type="1">
+<li><p>Create an <a href="https://en.wikipedia.org/wiki/Isochrone_map">Isochrone Map</a> for 1 location or a series of locations of your choice.</p></li>
+<li><p>Create one <a href="https://doc.arcgis.com/en/arcgis-online/analyze/enrich-layer.htm">Enrichment Layer</a> from a point(s), polygon or line feature of your choice.</p></li>
+<li><p><a href="https://enterprise.arcgis.com/en/portal/10.5/use/geocode-locations-from-table.htm">Geocode a ‘batch’ (Geocode Location from a Table)</a> of addresses of your choice.</p></li>
+<li><p>Create a <a href="https://doc.arcgis.com/en/arcgis-online/analyze/calculate-density.htm">density map</a> from a series of points of your choice.</p></li>
+<li><p>Develop a custom basemap in Mapbox, migrate it to ArcGIS Online and share this map publicly.</p></li>
+</ol>
+<p>Once complete, you will save, organize and print the results of your analysis with a short writeup of your analysis purpose and method(s).</p>
+</section>
+<section id="assignment-11---data" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-11---data">Assignment 11 - Data</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="STGIS_assignment-11_SP23_files/img/37.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption"><em>Assignment Lab Data Structure</em></figcaption><p></p>
+</figure>
+</div>
+<blockquote class="blockquote">
+<p>Note: The <a href="https://www.dropbox.com/s/l1na5y8jlypz8ur/c11_lab_example-DATA.zip?dl=1">C11 Technical Lab Data</a> is to be used for the lab alone. For your assignment, you will need to import your own dataset. You can create features at <a href="https://geojson.io/#map=2/0/20">geojson.io</a>, or use another data source - <a href="https://opendata.cityofnewyork.us/">NYC Open Data</a> for example. You will load your data into ArcGIS Online into the Content section as a feature layer just as we do in the lab together.</p>
+</blockquote>
+<ul>
+<li><a href="https://www.dropbox.com/s/l1na5y8jlypz8ur/c11_lab_example-DATA.zip?dl=1">Location of Class 11 Assignment Direct Data Download</a></li>
+</ul>
+</section>
+<section id="class-11-readings" class="level2">
+<h2 class="anchored" data-anchor-id="class-11-readings">Class 11 Readings:</h2>
+<p>This week’s reading that will be featured on the upcoming quiz will be from <a href="https://students.flatworldknowledge.com/course/2603061">Essentials of Geographic Information Systems textbook</a>.</p>
+<p>The Class 11 quiz on Monday 04/24/23 will feature 10 questions covering content in the textbook <strong>Chapter 9</strong>:</p>
+<p>Essentials of Geographic Information Systems textbook - <strong>Chapter 9, pages 175 - 192</strong></p>
+</section>
+<section id="assignment-step-1" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-1">Assignment Step 1</h2>
+<p>In this first assignment step, we will pick up with the basemap created on Monday and develop a share option for this map. Use this process for any map you would like to share as part of your class 11 assignment submission.</p>
+</section>
+<section id="assignment-step-2" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-step-2">Assignment Step 2</h2>
+<p>Next, we will connect ArcGIS Online to your ArcGIS ArcMap Desktop Software. To do this, open ArcGIS ArcMap Desktop and point to the Web Map first created in Mapbox, now located in Content at ArcGIS Online. You may want to use this type of connection in your final project if you want to develop a custom basemap for presentation purposes of your GIS analysis results.</p>
+</section>
+<section id="assignment-option-1" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-option-1">Assignment Option 1</h2>
+<p>Next, we will create isochrone distances utilizing features from the <a href="https://www.ansirh.org/abortion-facility-database">Abortion Facility Database - ANSIRH</a> to understand travel distances from within the current 12 states that have banned abortion as detailed in this <a href="https://www.nytimes.com/interactive/2022/us/abortion-laws-roe-v-wade.html">NYTIMES</a> article.</p>
+</section>
+<section id="assignment-option-2" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-option-2">Assignment Option 2</h2>
+<p>Next, we will <a href="https://doc.arcgis.com/en/arcgis-online/reference/geocode.htm">Geocode</a> an address table of NYC facilities located in Brooklyn. Geocoding is a typical GIS task, and ArcGIS Online is a good option by which to achieve dependable, accurate results.</p>
+</section>
+<section id="assignment-option-3" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-option-3">Assignment Option 3</h2>
+<p>In this option we will demonstrate ESRI’s <a href="https://doc.arcgis.com/en/arcgis-online/analyze/enrich-layer.htm">Enrichment Layer</a> service tool which provides demographic and landscape data for the people, places, and businesses associated with point, line, or area data locations.</p>
+</section>
+<section id="assignment-option-4" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-option-4">Assignment Option 4</h2>
+<p>this final demonstration, we will develop a new <a href="https://doc.arcgis.com/en/arcgis-online/analyze/calculate-density.htm">Density Surface</a> from a dense collection of accident crash points in the first months to date of 2023 in NYC. Both Density and Interpolation surfaces are valuable a predictive surfaces that help accentuate underlining data pattern and cluster that may not be evident within the original dataset alone.</p>
+</section>
+<section id="assignment-11-deliverable" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-11-deliverable">Assignment 11 Deliverable</h2>
+<p>In this final course assignment, you will choose one of the methods we have demonstrated together during the lab to develop your own mapping example. As noted in the preamble above, there are 5 potential options for this assignment. Make sure to include the following in a PDF submission to the assignment location in Canvas:</p>
+<ol type="1">
+<li><p>Either a print or share address of your cartographic output for your chosen method option.</p></li>
+<li><p>A synopsis writing of your analysis method. Include your and overview of your data input, reasoning for choosing a particular method option and data input, and a short summary of your results.</p></li>
+</ol>
+<p>The assignment 11 deliverable will be due 04/23/23 Sunday at 11:59 PM.</p>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources:</h2>
+<ul>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/reference/view-maps.htm">ArcGIS Online Classic Viewer</a></li>
+<li><a href="https://doc.arcgis.com/en/arcgis-online/get-started/get-started-with-mv.htm">ArcGIS ‘New’ Viewer</a></li>
+<li><a href="https://trecs-gis-trecs.hub.arcgis.com/pages/map-viewer-vs-map-viewer-classic">Map Viewer Vs. Map Viewer Classic</a></li>
+<li><a href="https://michaelminn.net/tutorials/arcgis-online-data-access/index.html">Michael Minn Arcgis Online Tutorials</a></li>
+<li><a href="https://www.esri.com/about/newsroom/arcuser/more-than-a-pretty-graphic/">Data Apportionment</a></li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var filterRegex = new RegExp(/^(?:http:|https:)\/\/www\.quarto\.org\/custom/);
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+    var links = window.document.querySelectorAll('a:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+          // target, if specified
+          link.setAttribute("target", "_blank");
+          // default icon
+          link.classList.add("external");
+      }
+    }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+<script src="STGIS_assignment-11_SP23_files/libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
